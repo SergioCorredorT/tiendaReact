@@ -6,14 +6,14 @@ import { useFilters } from "./hooks/useFilters";
 import { Footer } from "./components/Footer";
 export function App() {
   const [products] = useState(initialProducts);
-  const {filters, filterProducts} = useFilters()
-  const filteredProducts = filterProducts(products)
+  const { filterProducts } = useFilters();
+  const filteredProducts = filterProducts(products);
 
   return (
     <>
       <Header />
       <Products products={filterProducts(filteredProducts)} />;
-      <Footer filters={filters} />
+      <Footer />
     </>
   );
 }
