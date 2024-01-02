@@ -44,6 +44,7 @@
   transition: all .3s ease;
   width: 32px;
   z-index: 9999;
+  position: fixed;
 }
 
 .cart-button:hover {
